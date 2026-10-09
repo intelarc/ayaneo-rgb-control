@@ -198,7 +198,7 @@ class MainActivity : Activity() {
     private fun openAccessibility() {
         refreshOnResume = true
         startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
-        Toast.makeText(this, "Turn on \"RGB+ – reactive lights\"", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Turn on \"RGB Control – reactive lights\"", Toast.LENGTH_LONG).show()
     }
 
     // ================================================================ shell
@@ -216,7 +216,7 @@ class MainActivity : Activity() {
             LinearLayout.LayoutParams(ui.px(62), ui.px(11)).apply { leftMargin = ui.px(9) })
         bar.addView(View(this).apply { setBackgroundColor(Aya.FILL_2) }, LinearLayout.LayoutParams(maxOf(1, ui.density.toInt()), ui.px(18)).apply { leftMargin = ui.px(12); rightMargin = ui.px(12) })
         bar.addView(ui.text("RGB", 17f, Aya.WHITE, weight = 800))
-        bar.addView(ui.text("+", 17f, Aya.ACCENT, weight = 800))
+        bar.addView(ui.text("Control", 17f, Aya.ACCENT, weight = 600), ui.lp(ViewGroup.LayoutParams.WRAP_CONTENT).apply { leftMargin = ui.px(5) })
         bar.addView(View(this), LinearLayout.LayoutParams(0, 1, 1f))
         bar.addView(glyph("L1"), ui.lp(ViewGroup.LayoutParams.WRAP_CONTENT).apply { rightMargin = ui.px(4) })
         for (p in Page.values()) {
@@ -652,7 +652,7 @@ class MainActivity : Activity() {
 
         content.addView(ui.sectionTitle("About"))
         val about = ui.card()
-        about.addView(ui.text("RGB+ for AYANEO ${appVersion()}", 16f, Aya.WHITE, weight = 600))
+        about.addView(ui.text("AYANEO RGB Control ${appVersion()}", 16f, Aya.WHITE, weight = 600))
         about.addView(ui.text("Unofficial. Not made by, endorsed by or affiliated with AYANEO.", 13f, Aya.DIM).apply { setPadding(0, ui.px(4), 0, ui.px(8)) })
         about.addView(ui.text("Uses the firmware's own LED service, the same one AYASpace uses. 100% brightness matches the brightest setting AYASpace uses.\n" +
             "${Effect.values().size - 1} modes · ${Presets.BUILT_IN.size} themes · LED access: ${LedBackend.via}" +

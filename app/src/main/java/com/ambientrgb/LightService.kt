@@ -206,7 +206,7 @@ class LightService : Service(), SharedPreferences.OnSharedPreferenceChangeListen
         )
         return Notification.Builder(this, CHANNEL)
             .setSmallIcon(R.drawable.ic_stat)
-            .setContentTitle("RGB+ is running")
+            .setContentTitle("AYANEO RGB Control is running")
             .setContentText("Tap to change the lights")
             .setContentIntent(open)
             .addAction(Notification.Action.Builder(null, "Turn off", stop).build())

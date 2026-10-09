@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RGBPlus"
+rootProject.name = "AyaneoRgbControl"
 include(":app")

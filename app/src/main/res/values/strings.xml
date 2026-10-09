@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="key_service_label">RGB+ – reactive lights</string>
-    <string name="key_service_desc">Lets RGB+ flash the joystick lights when you press a button (Reactive mode). It only notices that a button was pressed; it never blocks, changes or records your input.</string>
+    <string name="key_service_label">RGB Control – reactive lights</string>
+    <string name="key_service_desc">Lets AYANEO RGB Control flash the joystick lights when you press a button (Reactive mode). It only notices that a button was pressed; it never blocks, changes or records your input.</string>
 </resources>
