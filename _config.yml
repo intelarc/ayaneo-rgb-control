@@ -1,0 +1,14 @@
+title: AYANEO RGB Control
+description: Free app to control the joystick RGB lights on the AYANEO Pocket Air Mini. 52 LED effects, 48 themes, colour wheel, music and reactive modes. Unofficial AYASpace RGB alternative, no root.
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - app
+  - gradle
+  - "*.cmd"
+  - gradlew
+  - gradlew.bat
+  - "*.kts"
+  - gradle.properties
