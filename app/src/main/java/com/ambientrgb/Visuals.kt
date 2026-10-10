@@ -84,11 +84,9 @@ class IconDrawable(private val type: Int, private val color: Int, private val si
  * Ring geometry measured on the 1600x1280 product photo, then cropped and scaled to 720x363.
  */
 class DeviceView(ctx: Context) : View(ctx) {
-    companion object {
-        private var cached: android.graphics.Bitmap? = null      // decoded once per process
-        private fun photo(ctx: Context) = cached ?: android.graphics.BitmapFactory.decodeResource(ctx.resources, R.drawable.device_photo).also { cached = it }
-    }
-    private val photo = photo(ctx)
+    // Held by the view, not a process-wide static cache: the ~1 MB photo is freed with the UI, so the always-on
+    // light service never keeps it. It is only decoded when the settings screen is actually open.
+    private val photo = android.graphics.BitmapFactory.decodeResource(ctx.resources, R.drawable.device_photo)
     private val colors = IntArray(8)
     private val img = Paint(Paint.ANTI_ALIAS_FLAG or Paint.FILTER_BITMAP_FLAG)
     private val glow = Paint(Paint.ANTI_ALIAS_FLAG).apply { style = Paint.Style.STROKE }
