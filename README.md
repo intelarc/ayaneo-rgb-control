@@ -96,7 +96,7 @@ The APK lands in `app/build/outputs/apk/debug/`. A signed release build needs a 
 
 ## Related
 
-- **[AYANEO Quick Menu](https://github.com/intelarc/ayaneo-quick-menu)**: a Steam Deck-style quick menu for the same handheld — performance modes, fan control, controller settings, quick toggles and an FPS overlay, from the same author. It shares this app's look and links back to it.
+- **[AYANEO Quick Menu](https://github.com/intelarc/ayaneo-quick-menu)**: a Steam Deck-style quick menu for the same handheld with performance modes, fan control, controller settings, quick toggles and an FPS overlay, from the same author. It shares this app's look and links back to it.
 
 ## Disclaimer
 
