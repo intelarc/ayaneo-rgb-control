@@ -94,6 +94,10 @@ You need JDK 17 or newer and the Android SDK (platform 37).
 
 The APK lands in `app/build/outputs/apk/debug/`. A signed release build needs a `keystore.properties` file and a keystore, which aren't included in this repo.
 
+## Related
+
+- **[AYANEO Quick Menu](https://github.com/intelarc/ayaneo-quick-menu)**: a Steam Deck-style quick menu for the same handheld — performance modes, fan control, controller settings, quick toggles and an FPS overlay, from the same author. It shares this app's look and links back to it.
+
 ## Disclaimer
 
 AYANEO, Pocket Air and their logos are trademarks of AYANEO. They're used here only to identify the hardware this app is for. The product photo is AYANEO's. This app is provided as is, with no warranty.
